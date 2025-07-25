@@ -155,7 +155,7 @@ p {
     transition: transform 0.2s ease;
   }
 
- .nav-menu,ul,li{
+ .nav-menu,.nav-item,.nav-link{
        padding: 20px;
 
     }
