@@ -577,8 +577,10 @@ const translations = {
 
         // About Section
         'about-title': 'About Shree Astrotalks',
-        'about-description': `At ShreeAstroTalks, we believe that every individual carries a unique energy and life path guided by the vibrations of numbers, planets, and cosmic alignments. Our mission is to help you decode your destiny and empower your decisions with the wisdom of Astrology, Numerology, Tarot, and ancient Vedic remedies. We don’t just predict your future we empower you to shape it. We guide you karma is yours.
-With 4+ years of experience, we've helped hundreds of clients gain clarity in love, career, business, relationships, health, marriage and overall life direction. Whether you're feeling stuck, unsure about a name or number, or simply seeking positive change our personalized consultations are designed to guide you with accuracy, intuition, and powerful remedies.`,
+        'about-description': ` At ShreeAstroTalks, we believe that every person carries a distinct energy and life journey, influenced by the powerful vibrations of numbers, celestial bodies, and cosmic patterns. 
+Our mission is to help you uncover your destiny and make empowered choices through the timeless wisdom of Astrology, Numerology, Tarot, and ancient Vedic remedies. We don't just forecast your future we guide you to shape it. Your karma is in your hands, and we’re here to help you navigate it with clarity and confidence.
+                    </br>With 4+ years of experience, we’ve helped hundreds of clients gain clarity in love, career, business, relationships, health, marriage and overall life direction. Whether you're feeling stuck, unsure about a name or number, or simply seeking positive change — our personalized consultations are designed to guide you with accuracy, intuition, and powerful remedies
+                      .`,
 
         'about-feature-1': '2.5K+ Consultations Done',
         'about-feature-2': 'Expert Astrologers',
@@ -590,7 +592,7 @@ With 4+ years of experience, we've helped hundreds of clients gain clarity in lo
         
         // New translations for demo.html content
         'services-page-title': '✨Our Services',
-        'service-1-heading': 'GET MOBILE NUMBER SCAN <span class="price">RS 79/- ONLY</span>',
+        'service-1-heading': 'GET MOBILE NUMBER SCAN <span class="price">₹ 79/- ONLY</span>',
         'service-1-p1': 'Do you know what your mobile number reveals about your life?',
         'service-1-p2': 'As per numerology, the total of your mobile number can influence your success, relationships, and overall energy.',
         'service-1-p3': 'Get a detailed analysis of your mobile number for just ₹79.',
@@ -605,7 +607,7 @@ With 4+ years of experience, we've helped hundreds of clients gain clarity in lo
         'service-1-li7': 'Feeling stuck or facing repeated setbacks',
         'service-1-p5': 'Choosing a number that aligns with your numerology is believed to enhance balance, attract success, and bring more positivity into your life.',
         'buy-now-btn': 'Buy Now',
-        'service-2-heading': 'Lucky Mobile Number Suggestion <span class="price">Rs 666/- ONLY</span>',
+        'service-2-heading': 'Lucky Mobile Number Suggestion <span class="price">₹ 666/- ONLY</span>',
         'service-2-p1': 'Get your suggested pairs and the best total for your mobile number.',
         'service-2-p2': 'A lucky mobile number can bring positive energy, confidence, and success. Many people believe that certain numbers attract good fortune based on numerology or cultural beliefs. It can:',
         'service-2-li1': 'Boost self-confidence and positivity',
@@ -614,7 +616,7 @@ With 4+ years of experience, we've helped hundreds of clients gain clarity in lo
         'service-2-li4': 'Make your number easy to remember and unique',
         'service-2-li5': 'Reflect personal or spiritual meaning',
         'service-2-p3': 'While not scientifically proven, a lucky number can positively influence your mindset and actions, helping you feel more empowered in life.',
-        'service-3-heading': 'NUMEROSCOPE <span class="price">Rs 399/- ONLY</span>',
+        'service-3-heading': 'NUMEROSCOPE <span class="price">₹ 399/- ONLY</span>',
         'service-3-p1': 'The Numeroscope is handmade and a tailored calculations of your details:',
         'service-3-li1': 'Date of birth analysis',
         'service-3-li2': 'Chaldean method',
@@ -641,7 +643,7 @@ With 4+ years of experience, we've helped hundreds of clients gain clarity in lo
         'service-4-li4': 'Business Vaastu',
         'service-4-li5': 'Business Mobile Number Selection',
         'service-4-p4': 'This package covers everything—from planning and branding to creating a supportive work environment—so your business can grow with confidence, stability, and long-term success.',
-        'service-5-heading': 'One to One Consultation <span class="price">Rs 199/- ONLY</span>',
+        'service-5-heading': 'One to One Consultation <span class="price">₹ 199/- ONLY</span>',
         'service-5-p1': 'A one-on-one call gives us the chance to really understand your business.',
         'service-5-p2': 'We talk about what’s working, what’s not, and any challenges you\'re facing. You can ask questions, share your thoughts, and get honest, helpful advice that’s made just for you.',
         'service-5-p3': 'Think of it like having a trusted guide by your side—someone who can help you avoid common mistakes and show you the best steps to take next. This makes things less confusing and helps your business move forward faster and with more confidence.',
@@ -735,9 +737,10 @@ With 4+ years of experience, we've helped hundreds of clients gain clarity in lo
 
         // About Section
         'about-title': 'श्री एस्ट्रोटॉक्स के बारे में',
-        'about-description': `श्रीएस्ट्रोटॉक्स में, हमारा मानना है कि प्रत्येक व्यक्ति एक अनूठी ऊर्जा और जीवन पथ धारण करता है जो संख्याओं, ग्रहों और ब्रह्मांडीय संरेखण के कंपन द्वारा निर्देशित होता है। हमारा मिशन ज्योतिष, अंक ज्योतिष, टैरो और प्राचीन वैदिक उपायों के ज्ञान से आपके भाग्य को समझने और आपके निर्णयों को सशक्त बनाने में आपकी सहायता करना है। हम केवल आपके भविष्य की भविष्यवाणी ही नहीं करते, बल्कि उसे आकार देने के लिए आपको सशक्त बनाते हैं। हम आपको मार्गदर्शन देते हैं, कर्म आपका है।
-4+ वर्षों के अनुभव के साथ, हमने सैकड़ों ग्राहकों को प्रेम, करियर, व्यवसाय, रिश्तों, स्वास्थ्य, विवाह और समग्र जीवन दिशा में स्पष्टता प्राप्त करने में मदद की है। चाहे आप अटके हुए महसूस कर रहे हों, किसी नाम या अंक को लेकर अनिश्चित हों, या बस सकारात्मक बदलाव चाहते हों
-हमारे व्यक्तिगत परामर्श आपको सटीकता, अंतर्ज्ञान और शक्तिशाली उपायों के साथ मार्गदर्शन करने के लिए डिज़ाइन किए गए हैं।`,
+        'about-description': `
+श्रीएस्ट्रोटॉक्स में, हमारा मानना है कि प्रत्येक व्यक्ति एक विशिष्ट ऊर्जा और जीवन यात्रा से गुज़रता है, जो संख्याओं, खगोलीय पिंडों और ब्रह्मांडीय पैटर्न के शक्तिशाली कंपनों से प्रभावित होती है।
+हमारा मिशन ज्योतिष, अंक ज्योतिष, टैरो और प्राचीन वैदिक उपायों के कालातीत ज्ञान के माध्यम से आपको अपने भाग्य को उजागर करने और सशक्त विकल्प बनाने में मदद करना है। हम न केवल आपके भविष्य की भविष्यवाणी करते हैं, बल्कि उसे आकार देने के लिए आपका मार्गदर्शन भी करते हैं। आपका कर्म आपके हाथों में है, और हम स्पष्टता और आत्मविश्वास के साथ उसमें आपकी मदद करने के लिए यहाँ हैं।
+4+ वर्षों के अनुभव के साथ, हमने सैकड़ों ग्राहकों को प्रेम, करियर, व्यवसाय, रिश्तों, स्वास्थ्य, विवाह और समग्र जीवन दिशा में स्पष्टता प्राप्त करने में मदद की है। चाहे आप अटके हुए महसूस कर रहे हों, किसी नाम या संख्या के बारे में अनिश्चित हों, या बस सकारात्मक बदलाव चाहते हों - हमारे व्यक्तिगत परामर्श आपको सटीकता, अंतर्ज्ञान और शक्तिशाली उपायों के साथ मार्गदर्शन करने के लिए डिज़ाइन किए गए हैं।`,
         'about-feature-1': '2.5K+ परामर्श पूर्ण',
         'about-feature-2': 'विशेषज्ञ ज्योतिषी',
         'about-feature-3': 'विश्वव्यापी सेवा',
