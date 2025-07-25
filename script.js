@@ -579,7 +579,7 @@ const translations = {
         'about-title': 'About Shree Astrotalks',
         'about-description': ` At ShreeAstroTalks, we believe that every person carries a distinct energy and life journey, influenced by the powerful vibrations of numbers, celestial bodies, and cosmic patterns. 
 Our mission is to help you uncover your destiny and make empowered choices through the timeless wisdom of Astrology, Numerology, Tarot, and ancient Vedic remedies. We don't just forecast your future we guide you to shape it. Your karma is in your hands, and we’re here to help you navigate it with clarity and confidence.
-                    </br>With 4+ years of experience, we’ve helped hundreds of clients gain clarity in love, career, business, relationships, health, marriage and overall life direction. Whether you're feeling stuck, unsure about a name or number, or simply seeking positive change — our personalized consultations are designed to guide you with accuracy, intuition, and powerful remedies
+                    <br></br>With 4+ years of experience, we’ve helped hundreds of clients gain clarity in love, career, business, relationships, health, marriage and overall life direction. Whether you're feeling stuck, unsure about a name or number, or simply seeking positive change — our personalized consultations are designed to guide you with accuracy, intuition, and powerful remedies
                       .`,
 
         'about-feature-1': '2.5K+ Consultations Done',
