@@ -155,6 +155,11 @@ p {
     transition: transform 0.2s ease;
   }
 
+ .nav-menu,ul,li{
+       padding: 20px;
+
+    }
+
   .gallery-grid img:hover {
     transform: scale(1.03);
   }
