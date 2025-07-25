@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Astrotalks - Your Spiritual Guide</title>
+    <meta name="description"
+        content="Expert astrology services including numerology, tarot reading, face reading, and spiritual guidance from Shree Astrotalks">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+ <style>
+        /* This internal style block is kept for variables, but all layout/alignment should be in styles.css */
+        :root {
+            /* Professional Color Palette - Color Theory Based */
+            --primary-burgundy: #8B0000;
+            --primary-gold: #B8860B;
+            --primary-navy: #191970;
+
+            /* Color Variations */
+            --burgundy-light: #A0522D;
+            --burgundy-dark: #654321;
+            --gold-light: #DAA520;
+            --gold-dark: #996515;
+            --navy-light: #4682B4;
+            --navy-dark: #0D1B2A;
+
+            /* Accent Colors */
+            --accent-cream: #F5F5DC;
+            --accent-bronze: #CD7F32;
+            --accent-silver: #C0C0C0;
+
+            /* Neutral Colors */
+            --white: #ffffff;
+            --gray-50: #f7fafc;
+            --gray-100: #edf2f7;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e0;
+            --gray-400: #a0aec0;
+            --gray-500: #718096;
+            --gray-600: #4a5568;
+            --gray-700: #2d3748;
+            --gray-800: #1a202c;
+            --gray-900: #171923;
+
+            /* Typography */
+            --font-primary: 'Inter', 'Poppins', sans-serif;
+            --font-heading: 'Playfair Display', 'Georgia', serif;
+            --font-accent: 'Cormorant Garamond', 'Times New Roman', serif;
+        }
+
+        /* Base body and container styles, ensuring consistency with external CSS */
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background: var(--gray-50);
+            color: var(--gray-900);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-navy);
+            margin-bottom: 40px;
+            font-family: var(--font-heading);
+        }
+
+        .service {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            padding: 20px;
+            border: 1px solid var(--gray-200);
+            border-radius: 12px;
+            background: var(--gray-100);
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .service img {
+            width: 600px;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+
+        .service-content {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .service h2 {
+            color: var(--primary-burgundy);
+            margin-top: 0;
+            font-family: var(--font-heading);
+        }
+
+        .price {
+            font-weight: bold;
+            color: var(--primary-gold);
+        }
+
+        /* Custom bullet list (gold check in navy circle) */
+        .service-content ul li {
+            position: relative;
+            list-style: none;
+            margin-bottom: 10px;
+            padding-left: 40px;
+            font-size: 17px;
+            color: var(--gray-800);
+            text-align: left; /* Ensure list items are left-aligned */
+        }
+
+        .service-content ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary-gold);
+            font-weight: bold;
+            font-size: 16px;
+            background: var(--primary-navy);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Buy button */
+        .buy-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: var(--primary-gold);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .buy-btn:hover {
+            background: var(--gold-dark);
+        }
+
+        /* Alternate layout for even services */
+        .service:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .service {
+                flex-direction: column !important;
+                text-align: center; /* Center align the entire service block */
+            }
+
+            .service img {
+                width: 100%;
+                height: auto;
+            }
+
+            .service-content {
+                text-align: left; /* Keep content text left-aligned within the centered block */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                        <img src="./attached_assets/48899325.png" alt="Shree Logo" class="logo-img">
+                    </div>
+                    <span class="logo-text">Shree Astrotalks</span>
+                </div>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" data-translate="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-translate="nav-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link" data-translate="nav-services">Services</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#offers" class="nav-link" data-translate="nav-offers">Offers</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-translate="nav-contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Language Toggle -->
+                <div class="language-toggle">
+                    <button id="lang-toggle" class="lang-btn">
+                        <i class="fas fa-globe"></i>
+                        <span id="current-lang">EN</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home"
+        style="position: relative; background-image: url('./attached_assets/image05.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;  padding: 120px 20px 60px;">
+        <!-- Black overlay -->
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 1;">
+        </div>
+
+        <!-- Content wrapper -->
+        <div class="hero-container" style="position: relative; z-index: 2;">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span data-translate="hero-title-1">Unlock Your Destiny with</span>
+                    <span class="highlight" data-translate="hero-title-2">Ancient Wisdom</span>
+                </h1>
+                <p class="hero-subtitle" data-translate="hero-subtitle">
+                    Discover your true potential through expert astrology, numerology, and spiritual guidance.
+                    Let the stars illuminate your path to success and happiness.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        <i class="fas fa-crystal-ball"></i>
+                        <span data-translate="hero-btn-1">Explore Services</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        <span data-translate="hero-btn-2">Consult Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" data-translate="about-title">About Shree Astrotalks</h2>
+                    <p class="about-description" data-translate="about-description">
+                       At <b>ShreeAstroTalks</b>, we believe that every individual carries a unique energy and life path guided by the vibrations of numbers, planets, and cosmic alignments. Our mission is to help you decode your destiny and empower your decisions with the wisdom of Astrology, Numerology, Tarot, and ancient Vedic remedies. We don’t just predict your future we empower you to shape it. We guide you karma is yours.
+                    </br>With 4+ years of experience, we've helped hundreds of clients gain clarity in love, career, business, relationships, health, marriage and overall life direction. Whether you're feeling stuck, unsure about a name or number, or simply seeking positive change our personalized consultations are designed to guide you with accuracy, intuition, and powerful remedies.`,
+                   </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span data-translate="about-feature-1">2.5K+ Consultations Done</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <span data-translate="about-feature-2">Expert Astrologers</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-globe"></i>
+                            <span data-translate="about-feature-3">Worldwide Service</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+    <h1 data-translate="services-page-title">✨Our Services</h1>
+
+    <!-- 1 -->
+    <div class="service">
+        <img src="attached_assets/image01.jpg" alt="Mobile Number Scan">
+        <div class="service-content">
+            <h2 data-translate="service-1-heading">GET MOBILE NUMBER SCAN <span class="price">RS 79/- ONLY</span></h2>
+            <p data-translate="service-1-p1">Do you know what your mobile number reveals about your life?</p>
+            <p data-translate="service-1-p2">As per numerology, the total of your mobile number can influence your success, relationships, and
+                overall energy.</p>
+            <p data-translate="service-1-p3">Get a detailed analysis of your mobile number for just ₹79.</p>
+            <p><strong data-translate="service-1-strong">Effects of an Unlucky or Incompatible Mobile Number</strong><br>
+                <span data-translate="service-1-p4">An unlucky mobile number may create negative energy and lead to:</span></p>
+            <ul>
+                <li data-translate="service-1-li1">Mental stress and lack of focus</li>
+                <li data-translate="service-1-li2">Poor communication and misunderstandings</li>
+                <li data-translate="service-1-li3">Career or business struggles</li>
+                <li data-translate="service-1-li4">Financial instability</li>
+                <li data-translate="service-1-li5">Health or emotional issues</li>
+                <li data-translate="service-1-li6">Relationship conflicts</li>
+                <li data-translate="service-1-li7">Feeling stuck or facing repeated setbacks</li>
+            </ul>
+            <p data-translate="service-1-p5">Choosing a number that aligns with your numerology is believed to enhance balance, attract success,
+                and bring more positivity into your life.</p>
+            <a href="https://superprofile.bio/vp/670c18d9d993b30013555b0d"
+                class="buy-btn" data-translate="buy-now-btn">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="service">
+        <img src="attached_assets/image02.png" alt="Lucky Number Suggestion">
+        <div class="service-content">
+            <h2 data-translate="service-2-heading">Lucky Mobile Number Suggestion <span class="price">Rs 666/- ONLY</span></h2>
+            <p data-translate="service-2-p1">Get your suggested pairs and the best total for your mobile number.</p>
+            <p data-translate="service-2-p2">A lucky mobile number can bring positive energy, confidence, and success. Many people believe that
+                certain numbers attract good fortune based on numerology or cultural beliefs. It can:</p>
+            <ul>
+                <li data-translate="service-2-li1">Boost self-confidence and positivity</li>
+                <li data-translate="service-2-li2">Improve career and business opportunities</li>
+                <li data-translate="service-2-li3">Enhance relationships and communication</li>
+                <li data-translate="service-2-li4">Make your number easy to remember and unique</li>
+                <li data-translate="service-2-li5">Reflect personal or spiritual meaning</li>
+            </ul>
+            <p data-translate="service-2-p3">While not scientifically proven, a lucky number can positively influence your mindset and actions,
+                helping you feel more empowered in life.</p>
+            <a href="https://superprofile.bio/vp/x1_sSJXT"
+                class="buy-btn" data-translate="buy-now-btn">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="service">
+        <img src="attached_assets/image03.jpg" alt="Numeroscope">
+        <div class="service-content">
+            <h2 data-translate="service-3-heading">NUMEROSCOPE <span class="price">Rs 399/- ONLY</span></h2>
+            <p data-translate="service-3-p1">The Numeroscope is handmade and a tailored calculations of your details:</p>
+            <ul>
+                <li data-translate="service-3-li1">Date of birth analysis</li>
+                <li data-translate="service-3-li2">Chaldean method</li>
+                <li data-translate="service-3-li3">Lo Shu grid of your birth date</li>
+                <li data-translate="service-3-li4">Pythagorean method</li>
+                <li data-translate="service-3-li5">Missing numbers</li>
+                <li data-translate="service-3-li6">Name analysis</li>
+                <li data-translate="service-3-li7">Lucky numbers</li>
+                <li data-translate="service-3-li8">Lucky color</li>
+                <li data-translate="service-3-li9">Auspicious place</li>
+                <li data-translate="service-3-li10">Auspicious time</li>
+                <li data-translate="service-3-li11">Career</li>
+                <li data-translate="service-3-li12">Your current mobile number analysing</li>
+                <li data-translate="service-3-li13">Recommendation of mobile number total as per your name and dob</li>
+            </ul>
+            <p data-translate="service-3-p2">📞 Book your personalized 1-on-1 call consultation today and discover what your Numeroscope says
+                about your future!</p>
+            <a href="https://superprofile.bio/vp/66cfa4430b9337001372b30b" class="buy-btn" data-translate="buy-now-btn">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- 4 (Now using checkmarks, not numbers) -->
+    <div class="service">
+        <img src="attached_assets/img20.jpeg" alt="Business Solution">
+        <div class="service-content">
+            <h2 data-translate="service-4-heading">Business Solution All in One <span class="price">Rs 6999/- ONLY</span></h2>
+            <p data-translate="service-4-p1">This all-in-one package is designed to set your business up for success with simple, effective
+                solutions.</p>
+            <p data-translate="service-4-p2">We start with a one-on-one discussion to understand your goals and offer practical business advice.
+                Then, we review your business name and logo, suggesting improvements to help your brand connect
+                better with customers.</p>
+            <p data-translate="service-4-p3">We also guide you in setting up your workspace in a way that brings positive energy, peace, and
+                growth. To support smooth communication and attract more opportunities, we help you choose a
+                business mobile number that suits your business.</p>
+            <p><strong data-translate="service-4-strong">In short, here’s what our turnkey business solutions include:</strong></p>
+            <ul>
+                <li data-translate="service-4-li1">Business Solutions and Discussion</li>
+                <li data-translate="service-4-li2">Business Logo Scanning and Suggestion</li>
+                <li data-translate="service-4-li3">Business Name Scanning and Suggestion</li>
+                <li data-translate="service-4-li4">Business Vaastu</li>
+                <li data-translate="service-4-li5">Business Mobile Number Selection</li>
+            </ul>
+            <p data-translate="service-4-p4">This package covers everything—from planning and branding to creating a supportive work
+                environment—so your business can grow with confidence, stability, and long-term success.</p>
+            <a href="https://superprofile.bio/bookings/shreeastrotalks5?sessionId=6762a3fa3097d900130d2885" class="buy-btn" data-translate="buy-now-btn">Buy
+                Now</a>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="service">
+        <img src="attached_assets/image04.jpeg" alt="One to One Consultation">
+        <div class="service-content">
+            <h2 data-translate="service-5-heading">One to One Consultation <span class="price">Rs 199/- ONLY</span></h2>
+            <p data-translate="service-5-p1">A one-on-one call gives us the chance to really understand your business.</p>
+            <p data-translate="service-5-p2">We talk about what’s working, what’s not, and any challenges you're facing. You can ask questions,
+                share your thoughts, and get honest, helpful advice that’s made just for you.</p>
+            <p data-translate="service-5-p3">Think of it like having a trusted guide by your side—someone who can help you avoid common mistakes
+                and show you the best steps to take next. This makes things less confusing and helps your business
+                move forward faster and with more confidence.</p>
+            <a href="https://superprofile.bio/bookings/shreeastrotalks5?sessionId=684eccb433955f0013045128" class="buy-btn" data-translate="buy-now-btn">Buy
+                Now</a>
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="service">
+        <img src="attached_assets/image17.png" alt="Personalized Crystal Remedy">
+        <div class="service-content">
+            <h2 data-translate="service-6-heading">Personalized Crystal Remedy</h2>
+            <p data-translate="service-6-p1">Discover the natural power of crystals to bring balance, healing, and positive energy into your life.
+                Whether you need emotional support, stress relief, or spiritual growth, our customized crystal
+                remedies are designed just for you.</p>
+            <p><strong data-translate="service-6-strong">What You’ll Get:</strong></p>
+            <ul>
+                <li data-translate="service-6-li1">Expert guidance on choosing the right crystals for your needs</li>
+                <li data-translate="service-6-li2">Personalized crystal recommendations in different forms (tumbled stones, jewelry, pyramids, and
+                    more)</li>
+                <li data-translate="service-6-li3">Tips on how to use and care for your crystals to maximize their benefits</li>
+            </ul>
+            <p><strong data-translate="service-6-strong2">Why book a session?</strong><br>
+                <span data-translate="service-6-p2">Crystals work best when they match your energy and goals. In your session, we’ll help you connect
+                with the right ones, so you can feel better, more balanced, and supported—naturally and gently.</span></p>
+            <a href="https://wa.me/917738961658?text=I%20want%20Personalized%20Crystal%20Remedy" class="buy-btn" data-translate="contact-now-btn">Contact Now</a>
+        </div>
+    </div>
+
+
+    <section class="core-services">
+        <div class="container">
+           <center><h2 data-translate="core-services-heading">✨ Our Core Services at ShreeAstroTalks</h2>
+            <p data-translate="core-services-p">
+                We offer a holistic blend of ancient sciences to help you gain clarity, balance, and direction in
+                all aspects of life — from personal relationships to business success.
+            </p></center> 
+
+            <div class="cards">
+
+                <!-- Business & Career -->
+                <div class="card">
+                    <img src="attached_assets/img19.jpg"
+                        alt="Business & Career Guidance">
+                    <div>
+                        <h3 data-translate="core-service-1-title">💼 Business & Career Guidance
+                        </h3>
+                        <p>
+                            <span data-translate="core-service-1-li1"><b>Business Name Suggestions</b><br>Crafted as per Numerology & Astrology to attract prosperity and recognition.<br><br></span>
+                            <span data-translate="core-service-1-li2"><b>Business Logo Design Consultation</b><br>Logo design guidance aligned with Vastu principles and vibrational energy for success.<br><br></span>
+                            <span data-translate="core-service-1-li3"><b>Profession & Career Direction</b><br>Personalized suggestions based on your date of birth and numerological profile.<br><br></span>
+                            <span data-translate="core-service-1-li4"><b>Lucky Colors, Numbers & Dates</b><br>For business launches, important deals, and personal success timing.<br><br></span>
+                            <span data-translate="core-service-1-li5"><b>Signature Correction</b><br>Improve energy flow and personal magnetism through signature alignment.</span>
+                        </p>
+                    </div>
+                    <a href="https://wa.me/917738961658?text=I%20am%20interested%20in%20Business%20and%20Career%20Guidance" data-translate="contact-now-btn">Contact
+                        Now</a>
+                </div>
+
+                <!-- Vastu -->
+                <div class="card">
+                    <img src="attached_assets/image11.jpg" alt="Vastu Consultation">
+                    <div>
+                        <h3 data-translate="core-service-2-title">🏠 Vastu Consultation</h3>
+                        <p>
+                            <span data-translate="core-service-2-li1"><b>Residential & Commercial Vastu Analysis</b><br>Evaluate and correct space energy using proven Vastu principles.<br><br></span>
+                            <span data-translate="core-service-2-li2"><b>Space Balancing Without Demolition</b><br>Practical remedies and realignment solutions — no structural changes required.<br><br></span>
+                            <span data-translate="core-service-2-li3"><b>Health, Wealth & Harmony Enhancements</b><br>Correct energy imbalances that impact your emotional, financial, or physical well-being.<br><br></span>
+                            <span data-translate="core-service-2-li4"><b>Directional Adjustments</b><br>Align key areas like entrance, kitchen, and workspaces to improve results.</span>
+                        </p>
+                    </div>
+                    <a href="https://wa.me/917738961658?text=I%20am%20interested%20in%20Vastu%20Consultation" data-translate="contact-now-btn">Contact
+                        Now</a>
+                </div>
+
+                <!-- Love & Relationship -->
+                <div class="card">
+                    <img src="attached_assets/image10.jpg" alt="Love & Relationship">
+                    <div>
+                        <h3 data-translate="core-service-3-title">❤️ Love, Marriage & Relationship
+                            Compatibility</h3>
+                        <p>
+                            <span data-translate="core-service-3-li1"><b>Matchmaking & Compatibility Analysis</b><br>Using Astrology and Numerology to assess relationship alignment.<br><br></span>
+                            <span data-translate="core-service-3-li2"><b>Life Partner & Business Partner Suitability</b><br>Discover the strengths and challenges in any personal or professional bond.<br><br></span>
+                            <span data-translate="core-service-3-li3"><b>Emotional Healing Remedies</b><br>Resolve conflicts, restore love, and enhance mutual understanding.<br><br></span>
+                            <span data-translate="core-service-3-li4"><b>Relationship Insights</b><br>Understand the energy patterns that affect trust, love, and communication.</span>
+                        </p>
+                    </div>
+                    <a href="https://wa.me/917738961658?text=I%20am%20interested%20in%20Love%20and%20Relationship" data-translate="contact-now-btn">Contact
+                        Now</a>
+                </div>
+
+                <!-- Baby & Family -->
+                <div class="card">
+                    <img src="attached_assets/image15.jpg" alt="Baby Name Guidance">
+                    <div>
+                        <h3 data-translate="core-service-4-title">👶 Baby Name & Family Guidance
+                        </h3>
+                        <p>
+                            <span data-translate="core-service-4-li1"><b>Baby Name Suggestions</b><br>Meaningful and lucky names selected using Lo-Shu Grid and planetary alignment.<br><br></span>
+                            <span data-translate="core-service-4-li2"><b>Family Vibration Matching</b><br>Improve harmony and bonding within your family using numerological balancing.<br><br></span>
+                            <span data-translate="core-service-4-li3"><b>Child Potential Analysis</b><br>Lo-Shu, Astrology and Numerology based evaluation of your child’s strengths, traits, and future path.</span>
+                        </p>
+                    </div>
+                    <a href="https://wa.me/917738961658?text=I%20am%20interested%20in%20Baby%20and%20Family" data-translate="contact-now-btn">Contact
+                        Now</a>
+                </div>
+
+                <!-- Tarot -->
+                <div class="card">
+                    <img src="attached_assets/imag12.jpg" alt="Tarot Reading">
+                    <div>
+                        <h3 data-translate="core-service-5-title">🃏 Tarot Reading with Remedies
+                        </h3>
+                        <p>
+                            <span data-translate="core-service-5-li1"><b>Intuitive Tarot Guidance</b><br>For love, career, finance, and life decisions.<br><br></span>
+                            <span data-translate="core-service-5-li2"><b>Action-Based Readings</b><br>Clear answers along with practical, spiritual remedies.<br><br></span>
+                            <span data-translate="core-service-5-li3"><b>Insightful & Accurate</b><br>Readings blended with deep intuitive connection and experience.</span>
+                        </p>
+                    </div>
+                    <a href="https://wa.me/917738961658?text=I%20am%20interested%20in%20Tarot%20Reading" data-translate="contact-now-btn">Contact
+                        Now</a>
+                </div>
+
+                <!-- Face Reading -->
+                <div class="card">
+                    <img src="attached_assets/image16.jpg" alt="Face Reading">
+                    <div>
+                        <h3 data-translate="core-service-6-title">👁️‍🗨️ Face Reading</h3>
+                        <p data-translate="core-service-6-p1">
+                            Your Face Tells Your Story<br>
+                            Your face reflects your inner self — personality traits, emotional energy, and future
+                            potential. We analyze:<br><br>
+                            • Natural strengths and areas for growth<br>
+                            • Relationship compatibility based on facial features<br>
+                            • How facial structure influences your career and confidence<br>
+                            • Personalized insights for self-awareness and development
+                        </p>
+                    </div>
+                    <a href="https://wa.me/917738961658?text=I%20am%20interested%20in%20Face%20Reading" data-translate="contact-now-btn">Contact
+                        Now</a>
+                </div>
+
+                <!-- Graphology -->
+                <div class="card">
+                    <img src="attached_assets/imag14.jpg" alt="Graphology">
+                    <div>
+                        <h3 data-translate="core-service-7-title">✍️ Handwriting & Signature
+                            Analysis (Graphology)</h3>
+                        <p data-translate="core-service-7-p1">
+                            Change Your Writing, Change Your Life<br>
+                            Your handwriting is a mirror of your subconscious. Through Graphology, we
+                            decode:<br><br>
+                            • Emotional patterns and personality traits<br>
+                            • Subtle blockages affecting your growth and mindset<br>
+                            • Signature corrections for success and energy alignment<br>
+                            • Recommendations to build confidence and leadership qualities
+                        </p>
+                    </div>
+                    <a href="https://wa.me/917738961658?text=I%20am%20interested%20in%20Graphology" data-translate="contact-now-btn">Contact
+                        Now</a>
+                </div>
+
+                <!-- Healing -->
+                <div class="card">
+                    <img src="attached_assets/img18.jpg" alt="Healing Remedies">
+                    <div>
+                        <h3 data-translate="core-service-8-title">📿 Healing & Energetic Remedies
+                        </h3>
+                        <p>
+                            <span data-translate="core-service-8-li1"><b>Crystal Therapy</b><br>Personalized healing using crystals for love, finance, health, and spiritual protection.<br><br></span>
+                            <span data-translate="core-service-8-li2"><b>Lucky Numbers & Object Vibration Matching</b><br>Mobile, house, and vehicle number suggestions to boost personal luck.<br><br></span>
+                            <span data-translate="core-service-8-li3"><b>Numerology Forecasts</b><br>Monthly and yearly guidance to plan and prepare with clarity.<br><br></span>
+                            <span data-translate="core-service-8-li4"><b>Color Therapy & Rituals</b><br>Energy-enhancing solutions through the use of colors and simple remedies.</span>
+                        </p>
+                    </div>
+                    <a href="https://wa.me/917738961658?text=I%20am%20interested%20in%20Healing%20and%20Remedies" data-translate="contact-now-btn">Contact
+                        Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+
+
+
+    <section class="feedback-carousel" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Feedback</h2>
+                <p class="section-subtitle">Hear what our clients have to say</p>
+            </div>
+
+            <div class="carousel-wrapper">
+                <div class="review-carousel">
+                    <div class="review-item">
+                        <p class="review-text">"The tarot reading was spot on. It helped me make a major life decision!"
+                        </p>
+                        <div class="review-author">
+                            <strong>- Ritu Sharma</strong>
+                            <span>Delhi, India</span>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <p class="review-text">"Got my name corrected and noticed positive energy in my daily life.
+                            Amazing experience."</p>
+                        <div class="review-author">
+                            <strong>- Manish Verma</strong>
+                            <span>Pune, Maharashtra</span>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <p class="review-text">"Very professional service. They answered all my questions patiently on
+                            WhatsApp."</p>
+                        <div class="review-author">
+                            <strong>- Neha Kapoor</strong>
+                            <span>Bangalore, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+<!-- Feedback Gallery Section -->
+<section class="feedback-gallery" id="reviews">
+  <div class="container">
+    <h2 class="section-title" data-translate="feedback-title">What Our Clients Say</h2>
+    <div class="gallery-grid">
+      <img src="attached_assets/image1.jpeg" alt="Screenshot 1" onclick="openModal(this)">
+      <img src="attached_assets/image2.jpeg" alt="Screenshot 2" onclick="openModal(this)">
+      <img src="attached_assets/image3.png" alt="Screenshot 3" onclick="openModal(this)">
+      <img src="attached_assets/image4.png" alt="Screenshot 4" onclick="openModal(this)">
+      <img src="attached_assets/image5.png" alt="Screenshot 5" onclick="openModal(this)">
+      <img src="attached_assets/image6.png" alt="Screenshot 6" onclick="openModal(this)">
+      <img src="attached_assets/image7.png" alt="Screenshot 7" onclick="openModal(this)">
+      <img src="attached_assets/image8.png" alt="Screenshot 8" onclick="openModal(this)">
+      <img src="attached_assets/image9.png" alt="Screenshot 9" onclick="openModal(this)">
+    </div>
+  </div>
+</section>
+
+<!-- Modal Structure -->
+<div id="imgModal" class="modal" onclick="closeModal()">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" class="modal-image" />
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="contact-title">Connect with Us</h2>
+                <p class="section-subtitle" data-translate="contact-subtitle">
+                    Ready to transform your life? Get in touch with our expert astrologers
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-translate="contact-whatsapp">WhatsApp</h3>
+                            <p>Get instant answers to your questions</p>
+                            <a href="https://wa.me/917738961658" class="contact-link" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                +91 7738 961 658
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-translate="contact-email">Email</h3>
+                            <p>Detailed consultations and reports</p>
+                            <a href="mailto:admin@shreeastrotalks.in" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                admin@shreeastrotalks.in
+                            </a> <br>
+                            <a href="mailto:astrotalksshree@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                astrotalksshree@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Consultation Hours</h3>
+                            <p>Monday to Sunday: 9:00 AM - 9:00 PM</p>
+                            <p class="timing-note">Available for urgent consultations 24/7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 data-translate="contact-info-title">Get in Touch</h3>
+                    <form id="consultation-form">
+                        <div class="form-group">
+                            <label for="name" data-translate="contact-form-name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-translate="contact-form-email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-translate="contact-form-phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" data-translate="contact-form-service">Service of Interest *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="Scan Mobile Numbers">Scan Mobile Numbers</option>
+                                <option value="Mobile Number Suggestion">Mobile Number Suggestion</option>
+                                <option value="Name Correction">Name Correction</option>
+                                <option value="One to One Consultation">One to One Consultation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-translate="contact-form-message">Your Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us about your concerns or questions..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-translate="contact-form-btn">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+
+                <!-- Branding + About -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./attached_assets/48899325.png" alt="Shree Astrotalks Logo " class="footer-logo-img" />
+                        <span>Shree Astrotalks</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted guide in astrology, numerology, and spiritual guidance.
+                        Authentic Vedic sciences for modern life solutions.
+                    </p>
+                    <div class="footer-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2.5K+</span>
+                            <span class="stat-label">Consultations</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                    <div class="social-section" style="margin-top: 15px;">
+                        <span style="margin-right: 10px;">Follow us:</span>
+                        <div class="social-links" style="display: inline-block;">
+                            <a href="https://wa.me/917738961658" target="_blank" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.instagram.com/shreea_5?igsh=MWY5aW80M3c5dW9xcQ==" target="_blank"
+                                aria-label="Instagram" >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61557564692778" target="_blank"
+                                aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Scan Mobile Numbers</a></li>
+                        <li><a href="#services">Mobile Number Suggestion</a></li>
+                        <li><a href="#services">Name Correction</a></li>
+                        <li><a href="#services">One to One Consultation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4>Get in Touch</h4>
+                    <div class="contact-info-footer">
+                        <div class="contact-item-footer">
+                            <i class="fab fa-whatsapp"></i>
+                            <div class="contact-details-footer">
+                                <span class="contact-label">WhatsApp</span>
+                                <a href="https://wa.me/917738961658" target="_blank">+91 7738 961 658</a>
+                            </div>
+                        </div>
+                        <div class="contact-item-footer">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-details-footer">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:admin@shreeastrotalks.in">admin@shreeastrotalks.in</a>
+                                <a href="mailto:astrotalksshree@gmail.com">astrotalksshree@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item-footer">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-details-footer">
+                                <span class="contact-label">USA Washington</span>
+                                <a href="tel:+15096204119">+1 509 620 4119</a>
+                            </div>
+                        </div>
+                        <div class="contact-item-footer">
+                            <i class="fas fa-globe"></i>
+                            <div class="contact-details-footer">
+                                <span class="contact-label">Website</span>
+                                <a href="https://shreeastrotalks.in" target="_blank">shreeastrotalks.in</a>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-item-footer">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-details-footer">
+                                <span class="contact-label">Address</span>
+                                <p>Shreeastrotalks Kocha Bazar,Kochha,Konchha-AYODHYA,<br>
+                                    UTAAR PRADESH 224207, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Shree Astrotalks. All rights reserved.<br>
+                        Powered by SB Solutions (Registered Company)</p>
+
+                    <div class="footer-badges">
+                        <span class="badge">Authentic Vedic Sciences</span>
+                        <span class="badge">Trusted by 2.5K+ Clients</span>
+                        <span class="badge">Professional Guidance</span>
+                    </div>
+
+                    <div class="footer-legal" style="margin-top: 15px; font-size: 0.9rem;">
+                        <a href="privacy.html" target="_blank" style="color: #aaa; text-decoration: none;">Privacy
+                            Policy</a> |
+                        <a href="privacy.html#terms-and-privacy" target="_blank"
+                            style="color: #aaa; text-decoration: none;">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
